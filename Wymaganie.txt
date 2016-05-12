@@ -1,0 +1,10 @@
+Name: Wyœwietlenie zak³adki About Us na stronie REC
+Version: 1.0
+
+Po najechaniu na zak³adke About Us, powinna siê
+wyœwietliæ lista podzak³adek tego dzia³u.
+Prawid³owe dzia³anie zapewni przegl¹darka Google Chrome.
+Po klikniêciu zak³adke About Us przegl¹darka powinna 
+przejœæ do czêœci strony odpowiedzialnej za wyœwietlenie
+krótkiej informacji o firmie REC, wraz z filmem, 
+który wyœwietliæ ma siê po prawej stronie

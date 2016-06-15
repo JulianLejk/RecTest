@@ -1,17 +1,19 @@
-#-*-coding: utf -8 -*-
+# -*-coding: utf -8 -*-
 def info(object, spacing=20, collapse=0):
     u"""Wypisuje metody i ich notki dokumentacyjne
     Argumentem mozebyc modul, klasa, lista, slownik czy  tez lancuch zanków"""
-    methodList = [e for e in dir(object) if callable(getattr(object,e))]
-    procesFunc = collapse and (lambda  s: " ".join(s.split()))\
-    or (lambda s: s)
-    print "\n".join(["%s %s" %\
-                                    (method.ljust(spacing),\
-                                    procesFunc(unicode(getattr(object,method).__doc__)))\
-                                    for method in methodList])
+    methodList = [e for e in dir(object) if callable(getattr(object, e))]
+    procesFunc = collapse and (lambda s: " ".join(s.split())) \
+                 or (lambda s: s)
+    print "\n".join(["%s %s" % \
+                     (method.ljust(spacing), \
+                      procesFunc(unicode(getattr(object, method).__doc__))) \
+                     for method in methodList])
 
-    if __name__ == "__main__":
-       print info.__doc__
+
+
+if __name__ == "__main__":
+    print info.__doc__
 """import odbchelper
 print info(odbchelper)
 print info(odbchelper,collapse=0)

@@ -1,3 +1,4 @@
+#-*-coding: utf -8 -*-
 li = ["a", "b", "mpilgrim", "z", "przyklad","b"]
 """print(li[0])
 print(li[4])
@@ -33,4 +34,12 @@ print li
 print [element *2 for element in li]
 li = [element *2 for element in li]
 print li
+#Poniżej przedstawiono składnię filtrowania listy:
+#[wyrażenie odwzorowujące for element in odwzorowywana
+#  lista if wyrażenie filtrujące]
+li = ["a", "mpilgrim","foo","b","c","b","d","d"]
+print [elem for elem in li if len(elem)>1]
+print [elem for elem in li if elem!="b"]
+print [elem for elem in li if li.count(elem)>1]
+
 

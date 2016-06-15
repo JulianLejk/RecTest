@@ -1,6 +1,6 @@
 import odbchelper
 import apihelper
-#from apihelper import info
+from apihelper import info
 
 #print apihelper.info(odbchelper)
 #print info(odbchelper, collapse=0)

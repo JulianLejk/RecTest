@@ -12,7 +12,7 @@ except TypeError:
 
 finally:
     print "tak to dziala"
-    """
+
 try:
         openfile = open("C:/Temp/t.txt","rb")
         print openfile.closed
@@ -35,10 +35,14 @@ finally:
         print openfile.closed
 #Dynamicznym tworzeniem instancji klas nieznanych typów
 # poprzez traktowanie klas jak obiektów
-#nie wiem czy to o to chodzi
-from fileinfo import MP3FileInfo
-print MP3FileInfo.__module__
-print sys.modules[MP3FileInfo.__module__]
+#nie wiem czy to o to chodzi"""""
+from classesAndObjects import FileInfo
+
+
+
+
+
+
 
 
 
